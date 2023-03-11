@@ -1,0 +1,81 @@
+
+h3 {
+    letter-spacing: 0.1rem;
+    font-size: 35px;
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container {
+    border: 2px solid white;
+    width: 550px;
+    height: 200px;
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.box  {
+    margin-left: 300px;
+    min-width: 90vh;
+}
+.modal {
+    background-color: #56acde;
+    border: none;
+    border-radius: 0.5rem;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    letter-spacing: 0.2rem;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    transform: translateY(-3px);
+    transition: ease 0.2s;
+}
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont {
+    border: 2px solid white;
+    width: 550px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    display: flex;
+    z-index: -10;
+    margin-top: 30vh;
+    visibility: hidden;
+}
+.h3-el {
+    text-align: center;
+    margin-top: 65px;
+    letter-spacing: 0.2rem;
+    margin-left: 135px;
+}
+.close-btn {
+    position: absolute;
+    left: 64rem;
+    top: 250px;
+    font-size: 25px;
+    background-color: red;
+    cursor: pointer;
+    outline: none;
+}
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
